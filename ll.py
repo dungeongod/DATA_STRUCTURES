@@ -22,5 +22,15 @@ if __name__ == '__main__':
 	third = Node(3)
 	llist.head.next = second
 	second.next = third
+
+	newNode = Node(4)
+	newNode.next = llist.head
+	llist.head = newNode
+
+	helloNode = Node(5)
+	helloNode.next = llist.head
+	llist.head = helloNode
+	
+	
 llist.printlist()
 
